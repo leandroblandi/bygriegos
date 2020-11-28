@@ -1,0 +1,490 @@
+/* CONFIGURACION INICIAL*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Droid Sans", "Segoe UI",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* ESTE ES EL DIV DEL TITULO QUE DICE ByG Riegos
+Ademas contiene la imagen y el logo, no dentro
+*/
+.titulo {
+    display: flex;
+    width: 100%;
+    background-image:url("../img/main.jpg");
+    padding: 2em;
+    color:#ededed;
+    font-family:"Century Gothic";
+    font-weight: bold;
+}
+
+/* Configuracion y ajuste de tamaño del logo
+de la gotita.
+*/
+
+.logo {
+    margin-left:1em;
+    object-fit:cover;
+    width:100px;
+    height: 100px;
+}
+.logo img {
+    object-fit:cover;
+    width:80px;
+    hyphens:80px;
+}
+
+/*.titulo:before {
+    content:'';
+    position: absolute;
+        top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+}*/
+
+/* Configuracion de tamaño y color de letra h1 ByG Riegos
+Asi como el color y efecto cuando el Mouse se pone encima
+*/
+
+.titulo h1 {
+    text-shadow: #000 0.1em 0.1em 0.2em;
+    font-size:60px;
+}
+
+.titulo a {
+    color:#fff;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+.titulo a:hover {
+    color:#DEDCDC;
+    transition: 0.3s all;
+}
+/* Contenedor del menu 
+No es el ul, sino que solo es el contenedor
+*/
+.menu {
+    width:100%;
+    background: rgba(48,60,88,1);
+    background: -moz-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,60,88,1)), color-stop(100%, rgba(60,74,109,1)));
+    background: -webkit-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -o-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -ms-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: linear-gradient(to bottom, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303c58', endColorstr='#3c4a6d', GradientType=0 );
+    color:#ededed;
+    /*border-radius: 0 0 20px 20px;*/ /* NO ME GUSTA COMO QUEDA */
+}
+/* Se pone display flex para que los li se pongan uno al lado del otro*/
+.menu ul {
+    display: flex;
+    flex-wrap: wrap; /*Configuracion provisional*/
+    margin-bottom:2.1em;  
+/*    border-top:2px solid #3F517A;*/
+}
+
+/* EN CUANTO A LOS MENUS, SE QUITARON
+BORDES POR TEMA DE CONVENCION
+*/
+
+.menu ul li {
+    margin-left:0;
+    list-style-type: none;
+}
+
+.menu ul li a {
+	text-transform: uppercase;
+    transition:0.30s all;
+    display: block;
+    font-weight: bold;
+    padding: 1.5em;
+    text-decoration:none;
+    color:#fff;
+/*    border-radius: 0px 0px 20px 20px;*/
+}
+.menu ul li a:hover {
+    color:#ededed;
+    cursor:pointer;
+    background: #3F517A;
+    transition:0.35s all;
+/*    border-radius: 0px 0px 20px 20px;*/
+}
+
+body {
+	background-color:#ededed;
+	min-height:230vh;
+}
+.bar {
+	display:block;
+	width:100%;
+	background: rgba(48,60,88,1);
+    background: -moz-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,60,88,1)), color-stop(100%, rgba(60,74,109,1)));
+    background: -webkit-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -o-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -ms-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+	background: linear-gradient(to bottom, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+	display: none;
+}
+
+.bar i {
+	color: #fff;
+	cursor: pointer;
+	padding:1.5em;
+}
+.contenedor-general {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu {
+	transition: all 0.5s;
+}
+
+.contenedor-general .contenedor-bienvenida {
+	width:90%;
+	margin: 0 auto;
+	background-color:#fff;
+	min-height:30vh;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+/* 1 CONTENEDOR, EL PRIMERO QUE SE VE*/
+.contenido-principal {
+	background: #fff;
+	min-height:50vh;
+	margin: 0 auto;
+	width: 90%;
+	border-radius: 0px 40px 0px 40px;
+	margin-bottom:2em;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* configuracion del titulo */
+.wallpaper h4 {
+	text-shadow: #000 0.1em 0.1em 0.2em;
+	margin-top: 3.2em;
+	font-size:40px;
+	/*font-weight: bold;*/
+	color:#fff;
+}
+/* imagen, margenes y cuestiones de ajustes*/
+.wallpaper {
+	text-align: center;
+	margin: 0 auto;
+	padding: 1em;
+	border-radius: 0px 40px 0px 40px;
+	min-height:50vh;
+	background-image: url("../img/principal.jpg");
+	object-fit: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* CONTENEDOR BIENVENIDA | CONTENEDOR QUE POSEE
+LAS CARDS, EL MAS COMPLEJO */
+/* el contenedor que contiene las cards, haciendo que sean flexibles
+mostrandose dependiendo del espacio en pantalla*/
+.contenedor-bienvenida {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*El titulo descriptivo de la card*/
+.contenedor-bienvenida .icono h4 {
+	margin-left:0;
+	text-align: center;
+	font-weight: bold;
+}
+/*el contenedor de la card*/
+.icono {
+	width: 30%;
+	padding: 1em;
+}
+/* se justifica la descripcion de la card
+para que se vea mas elegante*/
+.descripcion {
+	text-align: justify;
+}
+/* la linea separadora de las cards
+no se muestra cuando el cliente es una PC*/
+.linea {
+	display: none;
+}
+
+.contenedor-bienvenida .icono, .icono img {
+	margin: 1.2em 4em;
+	width:20%;
+	object-fit: cover;
+}
+
+.icono img {
+	display: block;
+	margin: auto;
+	transition: all 0.5s;
+}
+
+.icono img:hover {
+	transition: all 0.5s;
+	transform: scale(1.2);
+}
+
+/* CONTENEDOR 2*/
+.contenedor2 h2 {
+	padding-top:1.3em;
+	text-align: center;
+	color:#fff;
+	font-weight: bold;
+    font-size:25px;
+	position:relative;
+	text-shadow: #000 0.1em 0.1em 0.2em;
+}
+.contenedor-general .contenedor2 {
+	display: block;
+	width:90%;
+	margin: 2em auto 0em auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../img/bg-index.jpg"); 
+	min-height:20vh;
+	border-radius: 0px 30px 0px 30px;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+	position: relative;
+}
+
+.contenedor-general .contenedor2:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background:rgba(0,0,0,0.3);
+	border-radius: 0px 30px 0px 30px;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* CONTENEDOR 3*/
+.contenedor-general .contenedor3 {
+	width:90%;
+	margin: 2em auto 0em auto;
+	background-image: url("../img/triangle.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height:40vh;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+	justify-content: center;
+}
+
+.contenedor3 h2 {
+	color:#fff;
+	margin-top: 2.5em;
+	text-shadow: #000 0.1em 0.1em 0.2em;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.contenedor3 a {
+	margin-top:2em;
+	width: 10%;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contenedor3 a button {
+	transition: ease 0.3s;
+	width:100%;
+	text-transform: uppercase;
+	border-radius:20px;
+	background: transparent;
+	padding:0.5em;
+	border:2px solid #fff;
+}
+
+.contenedor3 a button:hover {
+	transition: ease 0.3s;
+	transform: scale(1.1);
+}
+/* PIE PAGINA */
+.pie-pagina {
+    display: block;
+    font-family:"Droid Sans",
+                "Segoe UI",
+                "Arial",
+                 sans-serif;
+    /*border-radius:20px 20px 0 0;
+    border-bottom:2px solid #3F517A;*/ /* SE COMENTO POR TEMA DE ESTANDARES */
+    bottom:0px;
+    position:fixed;
+    width: 100%;
+    color:#ededed;
+    padding: 1em;
+    text-align: center;
+    background: rgba(48,60,88,1);
+    background: -moz-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,60,88,1)), color-stop(100%, rgba(60,74,109,1)));
+    background: -webkit-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -o-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -ms-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: linear-gradient(to bottom, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303c58', endColorstr='#3c4a6d', GradientType=0 );
+}
+
+/* hace que no se vea tan feo el pp*/
+
+.pie-pagina {
+	display: flex;
+	justify-content: center;
+}
+
+.pie-pagina p {
+	user-select: none;
+}
+
+.pie-pagina p, .pie-pagina a {
+	text-align: center;
+}
+.pie-pagina a img {
+    transition: all 0.5s;
+	margin-left:0.5em;
+	width:16px;
+	height:16px;
+}
+
+.pie-pagina a img:hover {
+	transition: all 0.5s;
+	transform: scale(1.1);
+}
+
+
+/* QUERIE MOTOROLA G4*/
+@media only screen and (max-width:360px) {
+	.cada-icono {
+		margin: 1.2em auto;
+		justify-content: center;
+	}
+	.cada-icono img {
+		display: block;
+		margin: auto;
+	}
+	.cada-icono img:hover {
+		transform: scale(1.0);
+	}
+	.contenedor2, .contenedor {
+		width:90%;
+	}
+	.contenedor2 {
+		display: flex;
+		padding:1em;
+	}
+	.menu ul li {
+		text-align: left;
+		display:block;
+		width:100%;
+	}
+
+	.contenedor-general {
+		margin-top: 1em;
+	}
+	.contenedor2 h2 {
+		padding-top:0;
+		font-size:20px;
+	}
+
+	.contenedor-bienvenida {
+		justify-content: center;
+	}
+	.contenedor-bienvenida .icono {
+		width: 90%;
+	}
+	.icono {
+		padding: 0;
+	}
+	.descripcion {
+		font-size:18px;
+		margin: 9px;
+	}
+}
+
+/* QUERIE IPHONE X*/
+@media only screen and (max-width:420px) {
+
+	body {
+		min-height:330vh;
+	}
+	.menu ul li {
+		text-align: left;
+		display:block;
+		width:100%;
+	}
+	.menu ul li #active {
+		background: rgba(48,60,88,1);
+		background: -moz-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,60,88,1)), color-stop(100%, rgba(60,74,109,1)));
+		background: -webkit-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+		background: -o-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+		background: -ms-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+		background: linear-gradient(to bottom, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+	}
+	.contenedor-general {
+		margin-top: 1em;
+	}
+	.bar {
+		display: block;
+	}
+	.menu {
+		display: none;
+	}
+	.contenedor-general {
+		width: 100%;
+	}
+	.contenedor-bienvenida {
+		width: 100%;
+	}
+	.contenido-principal .wallpaper h4 {
+		margin-top: 2.2em;
+	}
+	.icono {
+		justify-content: center;
+		width:70%;
+	}
+	.icono img {
+		display: block;
+		width: 40%;
+		margin: 1.2em auto;
+	}
+	.icono .descripcion {
+		width: 90%;
+	}
+	.contenedor-bienvenida .icono {
+		margin: 1.2em 3em;
+		padding-right: 0;
+		width: 90%;
+		object-fit: cover;
+	}
+	.linea {
+		display: inline;
+		height: 3px;
+		width:85%;
+		max-width:200px;
+		border-bottom: 3px solid #ededed;
+		margin: 20px auto 0 auto;
+		padding: 0;
+	}
+	.contenedor2 h2 {
+		padding-top:0.7em;
+	}
+}

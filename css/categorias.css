@@ -1,0 +1,144 @@
+body {
+	font-family:"Droid Sans", sans-serif;
+}
+.titulo a:hover {
+	text-decoration:none;
+}
+
+.contenedor {
+	margin: 0 auto;
+	width:90%;
+	min-height:60vh;
+	background-color:#fff;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.contenedor2 {
+	margin: 0 auto;
+	width:90%;
+	min-height:60vh;
+	display: flex;
+	margin-bottom:2em;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contenedor2 {
+	display: flex;
+	padding:3em;
+}
+
+.contenedor h1 {
+	color: #000;
+}
+.categoria, .categoria img {
+	margin:1em auto;
+	object-fit:cover;
+	width:200px;
+	height:200px;
+	border-radius:70px 70px 70px 70px;
+	text-align: center;
+}
+
+.categoria a {
+	font-size:15px;
+	font-family:"Droid Sans",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color:#000;
+	font-weight:bold;
+}
+
+.categoria a:hover {
+	text-decoration:none;
+}
+
+.categoria img {
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
+	transition:0.6s all;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.categoria img:hover {
+	padding: 0.5em;
+	transition:0.5s all;
+}
+
+@media only screen and (max-width:414px) {
+	* {
+		font-size:18px;
+	}
+
+	body {
+		height: 150vh;
+		width:100%;
+	}
+	.categoria {
+		margin-bottom: 3.8em;
+	}
+	.contenedor {
+		width: 90%;
+	}
+	.contenedor2 {
+		padding: 2em;
+		/* Esta config es para 
+		que no quede mal en dispositivos moviles*/
+		margin-bottom:6em;
+		width: 90%;
+	}
+	.categoria a {
+		font-size:18px;
+	}
+}
+
+.pie-pagina {
+	display: flex;
+	justify-content: center;
+}
+
+.pie-pagina p, .pie-pagina a {
+	text-align: center;
+}
+.pie-pagina a img {
+	transition: all 0.5s;
+	margin-left:0.5em;
+	width:16px;
+	height:16px;
+}
+
+.pie-pagina a img:hover {
+	transition: all 0.5s;
+	width:18px;
+	height:18px;
+}
+.contenedor h1 {
+	font-weight: bold;
+	padding-top: 1.5em;
+}
+
+/* celular moto g4 */
+@media only screen and (max-width:360px) {
+	.contenedor2, .contenedor {
+		width:90%;
+	}
+	.contenedor2 {
+		display: flex;
+		padding:1em;
+	}
+	.menu ul li {
+		text-align: left;
+		display:block;
+		width:100%;
+	}
+}
+/* iPhone X*/
+@media only screen and (max-width:400px) {
+	.contenedor {
+		margin-top:2em;
+	}
+	.contenedor h1 {
+		font-weight: bold;
+		padding-bottom: 0;
+	}
+}

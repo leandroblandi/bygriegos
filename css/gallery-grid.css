@@ -1,0 +1,320 @@
+
+* {
+    font-family: "Droid Sans", 
+                 "Segoe UI", 
+                 "Arial", 
+                 sans-serif;
+}
+
+/* ESTE ES EL DIV DEL TITULO QUE DICE ByG Riegos
+Ademas contiene la imagen y el logo, no dentro
+*/
+.titulo {
+    display: flex;
+    width: 100%;
+    background-image:url("../img/main.jpg");
+    padding: 2em;
+    color:#ededed;
+    font-family:"Century Gothic";
+    font-weight: bold;
+}
+
+/* Configuracion y ajuste de tamaño del logo
+de la gotita.
+*/
+
+.logo {
+    margin-left:1em;
+    object-fit:cover;
+    width:100px;
+    height: 100px;
+}
+.logo img {
+    object-fit:cover;
+    width:80px;
+    hyphens:80px;
+}
+
+/*.titulo:before {
+    content:'';
+    position: absolute;
+        top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+}*/
+
+/* Configuracion de tamaño y color de letra h1 ByG Riegos
+Asi como el color y efecto cuando el Mouse se pone encima
+*/
+
+.titulo h1 {
+    text-shadow: #000 0.1em 0.1em 0.2em;
+    font-size:60px;
+}
+
+.titulo a {
+    color:#fff;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+.titulo a:hover {
+    color:#DEDCDC;
+    transition: 0.3s all;
+}
+
+/* Tipografia y tamaño, alineamiento y margen del
+parrafo descriptivo de la galeria BaguetteBox Js
+*/
+.gallery-container p {
+    font-family: 'Droid Sans', 
+                 'Segoe UI',
+                  sans-serif;
+    text-align: center;
+    margin-bottom:0;
+}
+
+/* Contenedor del menu 
+No es el ul, sino que solo es el contenedor
+*/
+.menu {
+    width:100%;
+    background: rgba(48,60,88,1);
+    background: -moz-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,60,88,1)), color-stop(100%, rgba(60,74,109,1)));
+    background: -webkit-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -o-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -ms-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: linear-gradient(to bottom, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303c58', endColorstr='#3c4a6d', GradientType=0 );
+    color:#ededed;
+    /*border-radius: 0 0 20px 20px;*/ /* NO ME GUSTA COMO QUEDA */
+}
+/* Se pone display flex para que los li se pongan uno al lado del otro*/
+.menu ul {
+    display: flex;
+    flex-wrap: wrap; /*Configuracion provisional*/
+    margin-bottom:2.1em;  
+/*    border-top:2px solid #3F517A;*/
+}
+
+/* EN CUANTO A LOS MENUS, SE QUITARON
+LOS BORDES (COMENTADOS POR SI LAS DUDAS)
+POR TEMAS DE DISEÑO Y CORRECION
+*/
+
+.menu ul li {
+    margin-left:0;
+    list-style-type: none;
+}
+
+.menu ul li a {
+    text-transform: uppercase;
+    transition:0.30s all;
+    display: block;
+    font-weight: bold;
+    padding: 1.5em;
+    text-decoration:none;
+    color:#fff;
+/*    border-radius: 0px 0px 20px 20px;*/
+}
+
+.bar i {
+	color: #fff;
+	cursor: pointer;
+}
+
+.menu ul li a:hover {
+    color:#ededed;
+    cursor:pointer;
+    background: #3F517A;
+    transition:0.35s all;
+/*    border-radius: 0px 0px 20px 20px;*/
+}
+
+
+body {
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding-bottom:60px;
+    margin-bottom:2.5em;
+}
+.bar {
+	padding: 1em;
+	display:block;
+	width:100%;
+	background: rgba(48,60,88,1);
+    background: -moz-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,60,88,1)), color-stop(100%, rgba(60,74,109,1)));
+    background: -webkit-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -o-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -ms-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+	background: linear-gradient(to bottom, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+	display: none;
+}
+
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', 
+                 'Segoe UI', 
+                  sans-serif;
+    font-weight: bold;
+    cursor:default;
+}
+.gallery-container p {
+    cursor: default;
+}
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+    cursor: default;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+/* Configuracion y diseño del pie de pagina
+Contiene cosas como el color, tipo de letra, el borde, etc.
+*/
+.pie-pagina {
+    display: block;
+    font-family:"Droid Sans",
+                "Segoe UI",
+                "Arial",
+                 sans-serif;
+    /*border-radius:20px 20px 0 0;
+    border-bottom:2px solid #3F517A;*/ /* SE COMENTO POR TEMA DE ESTANDARES */
+    bottom:0px;
+    position:fixed;
+    width: 100%;
+    color:#ededed;
+    padding: 1em;
+    text-align: center;
+    background: rgba(48,60,88,1);
+    background: -moz-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,60,88,1)), color-stop(100%, rgba(60,74,109,1)));
+    background: -webkit-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -o-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: -ms-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    background: linear-gradient(to bottom, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303c58', endColorstr='#3c4a6d', GradientType=0 );
+}
+
+/* hace que no se vea tan feo el pp*/
+
+.pie-pagina {
+	display: flex;
+	justify-content: center;
+}
+
+.pie-pagina p, .pie-pagina a {
+	text-align: center;
+}
+.pie-pagina a img {
+    transition: all 0.5s;
+	margin-left:0.5em;
+	width:16px;
+	height:16px;
+}
+
+.pie-pagina a img:hover {
+	transition: all 0.5s;
+	width:18px;
+	height:18px;
+}
+
+@media only screen and (max-width:360px) {
+	.contenedor2, .contenedor {
+		width:90%;
+	}
+	.contenedor2 {
+		display: flex;
+		padding:1em;
+	}
+
+	.contenedor2 h2 {
+		padding-top:0;
+		font-size:20px;
+	}
+	body {
+		min-height:180vh;
+	}
+}
+/* iPhone X*/
+@media only screen and (max-width:420px) {
+    .menu ul {
+        padding:0;
+    }
+	.menu ul li {
+		text-align: left;
+		display:block;
+		width:100%;
+	}
+	.menu ul li #active {
+		background: rgba(48,60,88,1);
+		background: -moz-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,60,88,1)), color-stop(100%, rgba(60,74,109,1)));
+		background: -webkit-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+		background: -o-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+		background: -ms-linear-gradient(top, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+		background: linear-gradient(to bottom, rgba(48,60,88,1) 0%, rgba(60,74,109,1) 100%);
+	}
+	.contenedor-general {
+		margin-top: 1em;
+	}
+	.bar {
+		display: block;
+	}
+	.menu {
+		display: none;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>ByG Riegos | Contáctenos</title>  
+        <meta charset="utf-8">
+        <meta name="description" content="ByG Riegos | Sistemas de riego de ultima tecnologia | Parquizaciones y paisajismo | Nivelaciones y cesped. Siguenos en nuestro Instagram @bygriegos">
+        <meta name="keywords" content="riegos, parquizaciones, paisajismo, cesped, pasto, parque, decoracion,
+        sistemas de riego, aspersion, nivelaciones, nivelaciones de tierra, riego, cesped, canchas, parques,
+        cañeria, servicio riego, reparaciones, argentina, sistemas de riego">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:title" content="ByG Riegos">
+        <meta property="og:description" content="ByG Riegos | Sistemas de riego de ultima tecnologia | Parquizaciones y paisajismo | Nivelaciones y cesped. Siguenos en nuestro Instagram @bygriegos">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/contact-css.css">
+        <link rel="icon" href="img/icon.ico" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/acerca.css">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://kit.fontawesome.com/130745cc6b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="contenedor-menu">
+            <!-- Logo o título -->
+            <div class="titulo">
+               <a href="index.html"><h1>ByG riegos</h1></a>
+               <div class="logo"><img src="img/logo.png" alt=""></div>
+            </div>
+            <div class="bar">
+                <i class="fas fa-bars" onclick="verificar();"></i>
+            </div>
+            <!-- Menu -->
+            <div class="menu" id="menu-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Galería</a></li>
+                    <li><a style="background: #3F517A;transition:0.35s all;" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="principal-flex">
+            <div class="contenedor">
+                <h2 class="cont-title">Contáctenos</h2>
+                <p class="cont-descrp">Llámenos o escríbanos al número o correo para contratar nuestro servicio</p>
+                <div class="contacto">
+                    <ul>
+                        <li><b>Teléfono móvil:</b> 11-4444-6666</li>
+                        <li><b>Teléfono alternativo:</b> 011-5033-5033</li>
+                        <li><b>Correo electronico:</b> ejemplo@mailhost.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wp-img"></div>
+        </div>
+            <div class="cont-mail">
+                    <div class="mailer">
+                        <div class="titulo-contacto">
+                            <h1>Formulario de contacto</h1>
+                        </div>
+                        <div class="descripcion-contacto">
+                            <p>Escríbanos un mail, ¡le responderemos en cuanto más rapido podamos!</p>
+                        </div>
+                        <form action="php/send.php" method="POST">
+                            <center>
+                                <div class="flexible">
+                                    <div class="entrada">
+                                        <input type="text" name="nombre" placeholder="Nombre" required="yes" maxlength="30">
+                                    </div>
+                                    <div class="entrada">
+                                        <input type="tel" name="telefono" placeholder="Teléfono" required="yes" maxlength="20">
+                                    </div>
+                                    <div class="entrada">
+                                        <input type="email" name="mail" placeholder="Correo electrónico" maxlength="60">
+                                    </div>
+                                </div>
+                                <div class="entrada" id="asunto-p">
+                                    <input type="text" id="asunto-c" name="asunto" placeholder="Asunto" required="yes" maxlength="20">
+                                </div>
+                                <div class="entrada" id="separar">
+                                    <textarea id="mensaje-c" name="mensaje" placeholder="Mensaje" required="yes"></textarea>
+                                    <div class="boton">
+                                        <input type="submit" value="Enviar" name="enviardatos">
+                                    </div>
+                                </div>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pie-pagina">
+            <p style="text-align: center;"><b>ByG 2020 Argentina</b></p>
+            <a href="https://www.instagram.com/bygriegos/">
+                <img src="img/png.png" alt="Síguenos en nuestro Instagram">
+            </a>
+        </div>
+        <script src="js/utilidades.js"></script>
+    </body>
+</html>
